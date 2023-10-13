@@ -1,0 +1,67 @@
+/*estilos de navegacion footer*/
+.styleFooter{
+    width: 100%;
+    background-color:  map-get($mapa-colores,color-header);
+    .footer{
+        color: map-get($mapa-colores,color-negro);
+    }
+    .lineaFooter{
+      border-top: solid map-get($mapa-colores,color-lineafooter);
+    }
+   .linknavFooter{
+      margin-top: 15px;
+      text-decoration: none;
+      color: map-get($mapa-colores,color-negro);
+      font-size: 1.6rem;
+      font-family: $font-footer-header;
+    }  
+      .nuestrasredes{
+          margin-top: 10px;
+          font-family: $font-footer-header;
+          font-size: 2rem;
+          }
+          .redessociales {
+            border-radius: 5px;
+            background-color: map-get($mapa-colores, color-fondoredes);
+            box-shadow: 6px 4px 8px 1px rgba(0, 0, 0, 0.74);
+            cursor: pointer;
+            transition: transform 0.8s, color 0.8s, background-color 0.8s;
+            &:hover{
+              box-shadow: initial;
+              background-color: map-get($mapa-colores, color-gris);
+              transform: scale(1.2);
+              transition: transform 0.4s, color 0.4s, background-color 0.4s;
+            }
+          }            
+      .mediosdePago{
+          text-align: start;
+          font-family:$font-footer-header;
+          font-size: 1.8rem;
+      }
+      .tituloHorarios{
+          padding-top: 10px;
+          text-align: center;
+          font-family: $font-footer-header;
+          font-size: 2rem;
+         }
+          .horarios{
+              color: map-get($mapa-colores,color-negro);
+              font-family: $font-principal;
+              font-size: 1.1rem;
+              text-align: center;
+         }    
+         .derechosReservados {
+          font-family: $font-principal;
+          font-size: 1.2rem;
+          margin-top: 15px;
+          color: map-get($mapa-colores,color-negro) /* Cambia el color a tu preferencia */   
+        }
+        .linkedinLink {
+          font-family: $font-principal;
+          color: map-get($mapa-colores,color-linklinkedin);
+          text-decoration: none;
+          &:hover{
+            text-decoration: underline; 
+          }
+        }
+  }

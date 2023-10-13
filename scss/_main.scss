@@ -1,0 +1,125 @@
+/*estilos para los main*/
+@mixin estilos-main {
+  margin-bottom: 70px;
+  margin-top: 10px;
+  .tituloContacto {
+    color: map-get($mapa-colores, color-negro);
+    text-align: center;
+    font-family: $font-principal;
+    text-shadow: 6px 2px 5px rgba(0, 0, 0, 0.6);
+    font-size: 2rem;
+    flex-direction: column;
+    padding-left: 8px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .tituloDelIndex {
+    color: map-get($mapa-colores, color-blanco);
+    font-family: $font-principal;
+    text-align: center;
+    font-size: 2.3rem;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .tituloPaginas {
+    color: map-get($mapa-colores, color-negro);
+    font-family: $font-footer-header;
+    font-size: 2.3rem;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .titulomapa {
+    padding-top: 20px;
+    font-family: $font-footer-header;
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 10px;
+  }
+  .titulo404error {
+    font-family: $font-principal;
+    text-align: center;
+  }
+  .errorancla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: map-get($mapa-colores, color-negro);
+    &:hover {
+      color: map-get($mapa-colores, color-linklinkedin);
+    }
+  }
+  .imgcontacto {
+    padding-bottom: 15px;
+    height: 430px;
+  }
+  .caja1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    gap: 15px;
+  }
+  .hijocaja1 {
+    width: 367px;
+    height: 430px;
+    margin-bottom: 15px;
+    background-color: map-get($mapa-colores, color-boxfondo);
+    box-shadow: 15px 10px 10px 0px rgba(0, 0, 0, 0.81);
+    border-radius: 12px;
+    border: solid 1px map-get($mapa-colores, color-negro);
+    transition: transform 0.8s, color 0.8s, background-color 0.8s;
+
+    &:hover {
+      box-shadow: initial;
+      background-color: map-get($mapa-colores, color-gris);
+      transform: scale(1.1);
+      transition: transform 0.4s, color 0.4s, background-color 0.4s;
+    }
+  }
+  .hijocaja1 img {
+    object-fit: cover;
+    width: 365px;
+    height: 370px;
+    border-radius: 11px;
+  }
+  .videoFondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+  .letrasProductos {
+    font-family: $font-boxs;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: $font-footer-header;
+    font-size: 1.4rem;
+    margin-top: 10px;
+    color: #050000;
+    padding: 7px 7px;
+    text-decoration: none;
+    border-radius: 17px;
+    background-color: map-get($mapa-colores, color-boton);
+    box-shadow: 6px 4px 8px 1px rgba(0, 0, 0, 0.74);
+    transition: color 0.4s, box-shadow 0.4s, background-color 0.4s;
+    &:hover {
+      color: map-get($mapa-colores, color-negro);
+      box-shadow: initial;
+      background-color: map-get($mapa-colores, color-blanco);
+    }
+  }
+}
+.main {
+  @include estilos-main;
+}

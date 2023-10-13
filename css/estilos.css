@@ -1,295 +1,375 @@
-  @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.colorheader{
-    background-color: #d2e7f8b9;
+@charset "UTF-8";
+/*variables*/
+/* mapa colores*/
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.videoFondo{
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    object-fit: cover;
+/*estilos para el body*/
+.cuerpo {
+  color: black;
+  background-image: url(../assets/img/MatePaisaje2.jpg);
+  background-size: 100% 119%; /* Ajusta la imagen para cubrir todo el fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-attachment: fixed; /* Fija la imagen de fondo en su posición */
 }
-/*estilos de navegacion footer*/
-
-.linknavFooter{
-    margin-top: 15px;
-    text-decoration: none;
-   color: rgb(0, 0, 0);
-    font-size: 1.6rem;
-    font-family:'Karla', sans-serif;
+.cuerpo .colorheader {
+  background-color: rgba(210, 231, 248, 0.7254901961);
 }
-/*estilos de navegacion header*/
-.linknavHeader{
-            text-decoration: none;
-            color: rgb(0, 0, 0);
-            font-size: 1.6rem;
-            margin-right: 20px;
-            font-family:'Karla', sans-serif;
-            border-radius: 6px;
-            background-color: rgba(255, 255, 255, 0.545);
-            box-shadow: 6px 4px 8px 1px rgba(0,0,0,0.74);
-            &:hover{
-                color: black;
-                box-shadow: initial;
-                background-color: white;
-            }
-
-        }
-.redessociales{
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.72);
-    box-shadow: 6px 4px 8px 1px rgba(0, 0, 0, 0.74);
-    &:hover{
-        box-shadow: initial;
-        background-color: #138636;
-    }
+.cuerpo .colorheader .logo {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.5s;
 }
- .main{
-            margin-bottom: 70px;
-            margin-top: 10px;
-        
-            .tituloDelIndex{
-                color: rgb(0, 0, 0);
-                display: flex;
-                font-family:'Preguntar', sans-serif;
-                font-size: 2.3rem;
-                justify-content: center;
-                padding-bottom: 20px;
-                padding-top: 20px;
-            }
-            .caja1{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                justify-content: space-evenly;
-                gap: 15px;
-                }        
-                .hijocaja1{
-                    background-color: rgba(255, 255, 255, 0.144);
-                    box-shadow: 15px 10px 10px 0px rgba(0,0,0,0.81);
-
-                    border: 1px solid black;
-                    width: 367px;   /* para el tamaño de las cajas*/
-                    height: 430px; /* para el tamaño de las cajas*/
-                }
-                .hijocaja1 img{
-                    object-fit: cover;
-                    width: 365px;
-                    height: 370px;
-                }
-                .LetrasProductos{
-                    font-family:Roboto, sans-serif;
-                    font-size: 1.4rem;
-                }
-        
-        }
-        
-        .tituloHorarios{
-            padding-top: 10px;
-            text-align: center;
-            font-family: 'Karla', sans-serif;
-            font-size: 2rem;
-            }
-
-.body{  /* para los estilos de mi seccion Contacto, (sin img de fondo)*/
-    background-color:rgba(255, 255, 255, 0.767);
+.cuerpo .colorheader .logo:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
 }
-.cuerpo{
-    color: black;
-    background-image: url(../assets/img/MatePaisaje2.jpg);
-    background-size: 100% 119%; /* Ajusta la imagen para cubrir todo el fondo */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-attachment: fixed; /* Fija la imagen de fondo en su posición */
-        .Logo{
-         height: 95px;  
-        }
-}  
-.prueba{
-    border-top: solid rgb(59, 57, 57) 3px;
+.cuerpo .colorheader .linknavHeader {
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+  margin-right: 20px;
+  font-family: "Karla", sans-serif;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.631);
+  box-shadow: 6px 4px 8px 1px rgba(0, 0, 0, 0.74);
+  transition: color 0.4s, box-shadow 0.4s, background-color 0.4s;
 }
-  
-.styleFooter{
-    width: 100%;
-    background-color:  #d2e7f8b9;
-    .footer{
-        color: black;
-    }    
-    .nuestrasredes{
-        margin-top: 10px;
-        font-family:'Karla', sans-serif;
-        font-size: 2rem;
-    }
-    
-    .mediosdePago{
-        text-align: start;
-        font-family:'Karla', sans-serif;
-        font-size: 1.8rem;
-    }
-    .horarios{
-        color: rgb(0, 0, 0);
-        font-family: 'Preguntar', sans-serif;
-        font-size: 1.1rem;
-        text-align: center;
-        .TituloHorarios{
-        align-content: center;
-        font-family: 'Karla', sans-serif;
-        font-size: 2rem;
-        }
-    
-    }
-    
-    .EnviosImg{
-        width: 200px;
-         height: 70px;
-    }        
+.cuerpo .colorheader .linknavHeader:hover {
+  color: black;
+  box-shadow: initial;
+  background-color: white;
 }
 
-.tituloPaginas{
-    color: rgb(0, 0, 0);
-    display: flex;
-    font-family:'Karla', sans-serif;
-    font-size: 2.3rem;
-    justify-content: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
+/*estilos para los main*/
+.main {
+  margin-bottom: 70px;
+  margin-top: 10px;
+}
+.main .tituloContacto {
+  color: black;
+  text-align: center;
+  font-family: "Preguntar", sans-serif;
+  text-shadow: 6px 2px 5px rgba(0, 0, 0, 0.6);
+  font-size: 2rem;
+  flex-direction: column;
+  padding-left: 8px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.main .tituloDelIndex {
+  color: white;
+  font-family: "Preguntar", sans-serif;
+  text-align: center;
+  font-size: 2.3rem;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.main .tituloPaginas {
+  color: black;
+  font-family: "Karla", sans-serif;
+  font-size: 2.3rem;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.main .titulomapa {
+  padding-top: 20px;
+  font-family: "Karla", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+.main .titulo404error {
+  font-family: "Preguntar", sans-serif;
+  text-align: center;
+}
+.main .errorancla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: black;
+}
+.main .errorancla:hover {
+  color: #0077B5;
+}
+.main .imgcontacto {
+  padding-bottom: 15px;
+  height: 430px;
+}
+.main .caja1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+.main .hijocaja1 {
+  width: 367px;
+  height: 430px;
+  margin-bottom: 15px;
+  background-color: rgba(255, 255, 255, 0.144);
+  box-shadow: 15px 10px 10px 0px rgba(0, 0, 0, 0.81);
+  border-radius: 12px;
+  border: solid 1px black;
+  transition: transform 0.8s, color 0.8s, background-color 0.8s;
+}
+.main .hijocaja1:hover {
+  box-shadow: initial;
+  background-color: grey;
+  transform: scale(1.1);
+  transition: transform 0.4s, color 0.4s, background-color 0.4s;
+}
+.main .hijocaja1 img {
+  object-fit: cover;
+  width: 365px;
+  height: 370px;
+  border-radius: 11px;
+}
+.main .videoFondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+.main .letrasProductos {
+  font-family: Roboto, sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.main .boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Karla", sans-serif;
+  font-size: 1.4rem;
+  margin-top: 10px;
+  color: #050000;
+  padding: 7px 7px;
+  text-decoration: none;
+  border-radius: 17px;
+  background-color: rgba(153, 188, 216, 0.738);
+  box-shadow: 6px 4px 8px 1px rgba(0, 0, 0, 0.74);
+  transition: color 0.4s, box-shadow 0.4s, background-color 0.4s;
+}
+.main .boton:hover {
+  color: black;
+  box-shadow: initial;
+  background-color: white;
 }
 
 /* Estilos para la sección "Sobre Nosotros" */
-.SobreNosotros {
-    display: flex;
-    align-items: center;
-    padding-top: 10px; /* Agrega espacio de la sección */
+.sobreNosotros {
+  display: flex;
+  align-items: center;
+  padding-top: 10px; /* Agrega espacio de la sección */
+}
+.sobreNosotros .contenedorImgSobreNosotros {
+  width: 100%;
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sobreNosotros .fotoquienessomos {
+  border: 1px solid black;
+  box-shadow: -11px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  width: 70%;
+  height: 400px;
+}
+.sobreNosotros .contenedorTexto {
+  width: 100%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 14px;
+  background-color: rgba(128, 128, 128, 0.815);
+  padding-top: 10px; /* Agregar espacio alrededor del texto */
+}
+.sobreNosotros .tituloQuienessomos,
+.sobreNosotros .tituloPorqueElegirnos {
+  color: white;
+  font-family: "Preguntar", sans-serif;
+  height: auto;
+}
+.sobreNosotros .parrafoSobreNosotros {
+  font-family: "Preguntar", sans-serif;
+  font-size: 1.1rem;
+  white-space: pre-line;
+  line-height: 1.7;
+}
+.sobreNosotros .textoResaltado {
+  color: white;
 }
 
-/* Estilos para el contenedor de la imagen */
-.ContenedorImgSobreNosotros {
-    width: 100%;
-    height: 370px;
-    display: flex;
-    flex-direction: column; /* Cambia la dirección a columna para alinear verticalmente */
-    justify-content: center;
-    align-items: center;
+/* para los estilos de mi seccion Contacto, (sin img de fondo)*/
+.body {
+  background-color: rgba(255, 255, 255, 0.767);
+}
+.body .colorheader {
+  background-color: rgba(210, 231, 248, 0.7254901961);
+}
+.body .colorheader .logo {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.5s;
+}
+.body .colorheader .logo:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+.body .colorheader .linknavHeader {
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+  margin-right: 20px;
+  font-family: "Karla", sans-serif;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.631);
+  box-shadow: 6px 4px 8px 1px rgba(0, 0, 0, 0.74);
+  transition: color 0.4s, box-shadow 0.4s, background-color 0.4s;
+}
+.body .colorheader .linknavHeader:hover {
+  color: black;
+  box-shadow: initial;
+  background-color: white;
 }
 
-/* Estilos para la imagen */
-.Fotoquienessomos {
-    border: 1px solid black;
-    box-shadow: -11px 10px 5px 0px rgba(0,0,0,0.75);
-    width: 70%; 
-    height: 400px; 
+/*estilos del formulario*/
+.formulario {
+  font-family: "Preguntar", sans-serif;
+  background-color: lightblue;
+  padding: 15px;
+}
+.formulario .botones {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 15px;
+}
+.formulario .comentario {
+  resize: none;
+}
+.formulario .label {
+  font-family: "Preguntar", sans-serif;
+  font-size: 1.1rem;
+  text-align: left;
 }
 
-/* Estilos para el texto seccion sobre nosotros */
-.ContenedorTexto {
-    width: 100%;
-    height: 100%;
-    color: black;
-    flex: 1; /* Ocupar todo el espacio disponible en la dirección horizontal y vertical */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; /* Alineación vertical y horizontal */
-    padding-right: 10px;
-    padding-left: 20px;
-    background-color: rgba(128, 128, 128, 0.815);
-    padding-top: 10px; /* Agrega espacio alrededor del texto */
+.whatsapp-icon {
+  position: fixed;
+  bottom: 4px;
+  right: 3px;
+  z-index: 1000;
 }
-/* Parrafo seccion sobre nosotros*/
-.ParrafoSobreNosotros {
-    font-family: 'Preguntar', sans-serif;
-    font-size: 1.2rem;
+.whatsapp-icon a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.4s;
 }
-
-/* Estilos para los títulos */
-.TituloQuienessomos,
-.TituloPorqueElegirnos {
-    color: white;
-    font-family: 'Preguntar', sans-serif;
-    height: auto; /* Altura automática para adaptarse al contenido */
+.whatsapp-icon a:hover {
+  transform: scale(1.1);
+  flex-direction: column;
 }
-
-.TituloSobreNosotros {
-    display: flex;
-    font-family: 'Preguntar', sans-serif;
-    justify-content: center;
-    font-size: 3rem;
-    height: auto; /* Altura automática para adaptarse al contenido */
-    margin-top: -10px;
+.whatsapp-icon a:hover .mensaje {
+  display: inline;
+  color: black;
+  border-radius: 5px;
+  transition: transform 0.7s;
+  background-color: white;
+  margin-right: 10px;
+}
+.whatsapp-icon .redessociales {
+  margin-right: 10px;
+}
+.whatsapp-icon .mensaje {
+  display: none;
+  font-family: "Preguntar", sans-serif;
+  border-radius: 10px;
+  white-space: nowrap;
 }
 
-/* Estilos para la sección principal */
-.CuerpoSeccionNosotros {
-    background-color: black;
-    height: auto; /* Altura automática para adaptarse al contenido */
-    color: white;
+/*estilos de navegacion footer*/
+.styleFooter {
+  width: 100%;
+  background-color: rgba(210, 231, 248, 0.7254901961);
+}
+.styleFooter .footer {
+  color: black;
+}
+.styleFooter .lineaFooter {
+  border-top: solid rgb(59, 57, 57);
+}
+.styleFooter .linknavFooter {
+  margin-top: 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+  font-family: "Karla", sans-serif;
+}
+.styleFooter .nuestrasredes {
+  margin-top: 10px;
+  font-family: "Karla", sans-serif;
+  font-size: 2rem;
+}
+.styleFooter .redessociales {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.72);
+  box-shadow: 6px 4px 8px 1px rgba(0, 0, 0, 0.74);
+  cursor: pointer;
+  transition: transform 0.8s, color 0.8s, background-color 0.8s;
+}
+.styleFooter .redessociales:hover {
+  box-shadow: initial;
+  background-color: grey;
+  transform: scale(1.2);
+  transition: transform 0.4s, color 0.4s, background-color 0.4s;
+}
+.styleFooter .mediosdePago {
+  text-align: start;
+  font-family: "Karla", sans-serif;
+  font-size: 1.8rem;
+}
+.styleFooter .tituloHorarios {
+  padding-top: 10px;
+  text-align: center;
+  font-family: "Karla", sans-serif;
+  font-size: 2rem;
+}
+.styleFooter .horarios {
+  color: black;
+  font-family: "Preguntar", sans-serif;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.styleFooter .derechosReservados {
+  font-family: "Preguntar", sans-serif;
+  font-size: 1.2rem;
+  margin-top: 15px;
+  color: black;
+}
+.styleFooter .linkedinLink {
+  font-family: "Preguntar", sans-serif;
+  color: #0077B5;
+  text-decoration: none;
+}
+.styleFooter .linkedinLink:hover {
+  text-decoration: underline;
 }
 
-/* seccion sobre nosotros*/
-.TextoResaltado {
-    color: rgb(45, 248, 123); /* Cambia el color a rojo u otro color de tu elección */
-}
-
-.imgcontacto{
-    padding-bottom: 15px;
-}
-
-.Formulario{
-    font-family:'Preguntar', sans-serif;
-    background-color: lightblue;
-    padding: 15px;
-}
-.image img{
-    padding-top: 20px;
-    width:500px;
-    height: 500px;
-    
-}
-.tituloContacto{
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-family:'Preguntar', sans-serif;
-    text-shadow: 6px 2px 5px rgba(0,0,0,0.6);
-    font-size: 2rem;
-    flex-direction: column;
-    padding-left: 8px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-.comentario{
-    resize: none;
-}
-
-.Mapa{
-    display: flex;
-    justify-content: center;
-    margin-bottom:30px ;
-}
-.botones{
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 15px;
-}
-.titulomapa{
-    padding-top: 20px;
-    font-family:'Karla', sans-serif;
-    text-align: center;
-    font-size: 2rem;
-    padding-bottom: 10px;
-}
-.Label{
-    font-family:'Preguntar', sans-serif;
-    text-align: left;
-}
-
+/*# sourceMappingURL=estilos.css.map */

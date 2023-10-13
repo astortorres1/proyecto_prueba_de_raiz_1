@@ -1,0 +1,20 @@
+/*estilos del formulario*/
+.formulario{
+    font-family:$font-principal;
+    background-color: map-get($mapa-colores,color-formulario);;
+    padding: 15px;
+      .botones{
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 15px;
+      }
+      .comentario{
+        resize: none;
+      }
+      .label{
+        font-family:$font-principal;
+        font-size: 1.1rem;
+        text-align: left;
+      } 
+  }
+  

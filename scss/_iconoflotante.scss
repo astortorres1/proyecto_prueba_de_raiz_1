@@ -1,0 +1,33 @@
+.whatsapp-icon {
+    position: fixed;
+    bottom: 4px;
+    right: 3px;
+    z-index: 1000;
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      transition: transform 0.4s;
+      &:hover{
+        transform: scale(1.1);
+        flex-direction: column;
+        .mensaje{
+          display: inline;
+          color: map-get($mapa-colores, color-negro);
+          border-radius: 5px;
+          transition: transform 0.7s;
+          background-color: map-get($mapa-colores, color-blanco);
+          margin-right: 10px;
+        }
+      }
+    }
+    .redessociales {
+      margin-right: 10px;
+    }
+    .mensaje {
+      display: none;
+      font-family: $font-principal;
+      border-radius: 10px;
+      white-space: nowrap;
+    }
+}
