@@ -18,6 +18,19 @@
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   background-attachment: fixed; /* Fija la imagen de fondo en su posición */
 }
+.cuerpo .carrusel {
+  border-radius: 10px;
+  height: 560px;
+  width: 100%;
+  object-fit: cover;
+}
+.cuerpo .letrascarrusel {
+  color: black;
+  font-size: Roboto, sans-serif;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.678);
+}
 .cuerpo .colorheader {
   background-color: rgba(210, 231, 248, 0.7254901961);
 }
@@ -47,6 +60,52 @@
   background-color: white;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* Animación para dispositivos grandes */
+.carousel-item.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 1.1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.carousel-item.slide-right {
+  animation-name: slideRight;
+  animation-duration: 1.3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 480px) {
+  .carousel-item.fade-in {
+    animation-name: fadeIn;
+    animation-duration: 1.1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  .carousel-item.slide-right {
+    animation-name: slideRight;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+}
 /*estilos para los main*/
 .main {
   margin-bottom: 70px;
@@ -126,6 +185,19 @@
   background-color: grey;
   transform: scale(1.1);
   transition: transform 0.4s, color 0.4s, background-color 0.4s;
+}
+@media (max-width: 767px) {
+  .main .hijocaja1 {
+    width: 290px !important;
+    height: 350px !important;
+    overflow: visible !important; /* Añadimos overflow: visible */
+  }
+  .main .hijocaja1 img {
+    object-fit: cover !important;
+    width: 100% !important;
+    height: 85% !important;
+    border-radius: 11px !important;
+  }
 }
 .main .hijocaja1 img {
   object-fit: cover;

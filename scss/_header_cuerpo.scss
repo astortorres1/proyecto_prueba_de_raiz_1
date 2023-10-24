@@ -5,6 +5,19 @@
     background-size: 100% 119%; /* Ajusta la imagen para cubrir todo el fondo */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-attachment: fixed; /* Fija la imagen de fondo en su posición */
+    .carrusel{
+    border-radius: 10px;
+	height: 560px; 
+    width: 100%; 
+    object-fit: cover;
+    }
+    .letrascarrusel{
+        color: map-get($mapa-colores,color-negro);
+        font-size: $font-boxs;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        background-color:  map-get($mapa-colores,color-fondocarrusel);
+        }
     .colorheader{   
         background-color: map-get($mapa-colores,color-header);
         .logo{

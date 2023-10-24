@@ -78,6 +78,23 @@
       transition: transform 0.4s, color 0.4s, background-color 0.4s;
     }
   }
+  @media (max-width: 767px) {
+    .hijocaja1 {
+      width: 290px !important;
+      height: 350px !important;
+      overflow: visible !important; /* Añadimos overflow: visible */
+    }
+  
+    .hijocaja1 img {
+      object-fit: cover !important;
+      width: 100% !important;
+      height: 85% !important;
+      border-radius: 11px !important;
+    }
+  }
+  
+  
+  
   .hijocaja1 img {
     object-fit: cover;
     width: 365px;
