@@ -34,9 +34,13 @@
             }
           }            
       .mediosdePago{
+        display: inline-block;
           text-align: start;
           font-family:$font-footer-header;
           font-size: 1.8rem;
+          }
+      .mediosdepagoimg{
+        width: 65%;
       }
       .tituloHorarios{
           padding-top: 10px;

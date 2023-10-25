@@ -2,7 +2,7 @@
 .cuerpo{
     color: map-get($mapa-colores,color-negro);
     background-image: url(../assets/img/MatePaisaje2.jpg);
-    background-size: 100% 119%; /* Ajusta la imagen para cubrir todo el fondo */
+    background-size: 100% 105%; /* Ajusta la imagen para cubrir todo el fondo */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-attachment: fixed; /* Fija la imagen de fondo en su posición */
     .carrusel{
@@ -11,6 +11,42 @@
     width: 100%; 
     object-fit: cover;
     }
+    .tituloContenedor_1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .tituloContenedor {
+        background-color: #add8e6; /* Celeste pastel */
+        border: 2px solid grey;
+        border-radius: 10px;
+        width: max-content;
+        text-align: center;
+        display: inline-block;
+        padding: 15px;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+        animation: titilar 2s infinite;
+      }
+      .tituloDelIndex_2 {
+        font-family: $font-principal;
+        font-size: 2.3rem;
+        color: map-get($mapa-colores,color-lineafooter);
+      }
+      @keyframes titilar {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      
     .letrascarrusel{
         color: map-get($mapa-colores,color-negro);
         font-size: $font-boxs;

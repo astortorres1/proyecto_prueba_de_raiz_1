@@ -14,7 +14,7 @@
 .cuerpo {
   color: black;
   background-image: url(../assets/img/MatePaisaje2.jpg);
-  background-size: 100% 119%; /* Ajusta la imagen para cubrir todo el fondo */
+  background-size: 100% 105%; /* Ajusta la imagen para cubrir todo el fondo */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   background-attachment: fixed; /* Fija la imagen de fondo en su posición */
 }
@@ -23,6 +23,41 @@
   height: 560px;
   width: 100%;
   object-fit: cover;
+}
+.cuerpo .tituloContenedor_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.cuerpo .tituloContenedor {
+  background-color: #add8e6; /* Celeste pastel */
+  border: 2px solid grey;
+  border-radius: 10px;
+  width: max-content;
+  text-align: center;
+  display: inline-block;
+  padding: 15px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  animation: titilar 2s infinite;
+}
+.cuerpo .tituloDelIndex_2 {
+  font-family: "Preguntar", sans-serif;
+  font-size: 2.3rem;
+  color: rgb(59, 57, 57);
+}
+@keyframes titilar {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .cuerpo .letrascarrusel {
   color: black;
@@ -170,7 +205,9 @@
   flex-wrap: wrap;
   justify-content: center;
   justify-content: space-evenly;
-  gap: 15px;
+  gap: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .main .hijocaja1 {
   width: 367px;
@@ -421,9 +458,13 @@
   transition: transform 0.4s, color 0.4s, background-color 0.4s;
 }
 .styleFooter .mediosdePago {
+  display: inline-block;
   text-align: start;
   font-family: "Karla", sans-serif;
   font-size: 1.8rem;
+}
+.styleFooter .mediosdepagoimg {
+  width: 65%;
 }
 .styleFooter .tituloHorarios {
   padding-top: 10px;
