@@ -123,17 +123,19 @@
   padding-top: 20px;
 }
 .main .tituloDelIndex {
-  color: white;
+  color: black;
   font-family: "Preguntar", sans-serif;
   text-align: center;
-  font-size: 2.3rem;
+  font-size: 2.4rem;
   padding-bottom: 20px;
   padding-top: 20px;
+  text-decoration: underline;
+  text-decoration-color: lightblue;
 }
 .main .tituloPaginas {
   color: black;
   font-family: "Karla", sans-serif;
-  font-size: 2.3rem;
+  font-size: 2.4rem;
   text-align: center;
   padding-bottom: 20px;
   padding-top: 20px;
