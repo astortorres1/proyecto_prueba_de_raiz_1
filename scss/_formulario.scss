@@ -3,6 +3,10 @@
     font-family:$font-principal;
     background-color: map-get($mapa-colores,color-formulario);;
     padding: 15px;
+    height: 500px;
+    @media (max-width: 767px) {
+      height: 100%;
+      }
       .botones{
         display: flex;
         justify-content: space-evenly;

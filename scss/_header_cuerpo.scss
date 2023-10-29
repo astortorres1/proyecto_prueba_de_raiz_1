@@ -1,10 +1,19 @@
 /*estilos para el body*/
 .cuerpo{
-    color: map-get($mapa-colores,color-negro);
-    background-image: url(../assets/img/MatePaisaje2.jpg);
-    background-size: 100% 105%; /* Ajusta la imagen para cubrir todo el fondo */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-attachment: fixed; /* Fija la imagen de fondo en su posición */
+  color: map-get($mapa-colores, color-negro);
+background-image: url(../assets/img/MatePaisaje2.jpg);
+background-size: 100% 110%; /* Ajusta la imagen para cubrir todo el fondo */
+background-repeat: no-repeat; /* Evita que la imagen se repita */
+background-attachment: fixed; /* Fija la imagen de fondo en su posición */
+/* Media Query para dispositivos móviles (hasta 768px de ancho) */
+@media (max-width: 576px) {
+  background-size: 100% 103%;
+   /* Permite el desplazamiento de fondo en dispositivos móviles */
+}
+/* Media Query para tabletas (hasta 768px de ancho) */
+@media (max-width: 768px) {
+  background-size: 100% 103%;
+}
     .carrusel{
     border-radius: 10px;
 	height: 560px; 
@@ -72,6 +81,8 @@
             margin-right: 20px;
             font-family:$font-footer-header;
             border-radius: 6px;
+            padding-left: 5px;
+            padding-right: 5px;
             background-color: map-get($mapa-colores,color-linkborde);
             box-shadow: 6px 4px 8px 1px rgba(0,0,0,0.74);
             transition: color 0.4s, box-shadow 0.4s, background-color 0.4s;

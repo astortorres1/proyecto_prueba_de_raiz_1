@@ -13,6 +13,7 @@
     }
     .fotoquienessomos {
       border: 1px solid map-get($mapa-colores,color-negro);
+      border-radius: 4px;
       box-shadow: -11px 10px 5px 0px rgba(0,0,0,0.75);
       width: 70%; 
       height: 400px; 
@@ -28,6 +29,8 @@
           padding: 14px;
           background-color: map-get($mapa-colores,color-contenedortexto);
           padding-top: 10px; /* Agregar espacio alrededor del texto */
+          margin-left: 10px;
+          margin-top: 12px;
       }
           .tituloQuienessomos,
           .tituloPorqueElegirnos {
