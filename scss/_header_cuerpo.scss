@@ -1,22 +1,32 @@
 /*estilos para el body*/
 .cuerpo{
   color: map-get($mapa-colores, color-negro);
-background-image: url(../assets/img/MatePaisaje2.jpg);
-background-size: 100% 110%; /* Ajusta la imagen para cubrir todo el fondo */
-background-repeat: no-repeat; /* Evita que la imagen se repita */
-background-attachment: fixed; /* Fija la imagen de fondo en su posición */
-/* Media Query para dispositivos móviles (hasta 768px de ancho) */
-@media (max-width: 576px) {
+  color: map-get($mapa-colores, color-negro);
+  background-image: url(../assets/img/MatePaisaje2.jpg);
+  background-size: 100% 110%; /* Ajusta la imagen para cubrir todo el fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-attachment: fixed; /* Fija la imagen de fondo en su posición */
+  /* Media Query para dispositivos móviles (hasta 768px de ancho) */
+  @media (max-width: 576px) {
   background-size: 100% 103%;
-   /* Permite el desplazamiento de fondo en dispositivos móviles */
-}
-/* Media Query para tabletas (hasta 768px de ancho) */
-@media (max-width: 768px) {
+  /* Permite el desplazamiento de fondo en dispositivos móviles */
+  }
+  /* Media Query para tabletas (hasta 768px de ancho) */
+  @media (max-width: 768px) {
   background-size: 100% 103%;
-}
+  }
+  .videoFondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
     .carrusel{
     border-radius: 10px;
-	height: 560px; 
+	  height: 560px; 
     width: 100%; 
     object-fit: cover;
     }

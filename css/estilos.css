@@ -13,6 +13,7 @@
 /*estilos para el body*/
 .cuerpo {
   color: black;
+  color: black;
   background-image: url(../assets/img/MatePaisaje2.jpg);
   background-size: 100% 110%; /* Ajusta la imagen para cubrir todo el fondo */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -30,6 +31,15 @@
   .cuerpo {
     background-size: 100% 103%;
   }
+}
+.cuerpo .videoFondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  object-fit: cover;
 }
 .cuerpo .carrusel {
   border-radius: 10px;
@@ -249,15 +259,6 @@
     height: 83% !important;
     border-radius: 11px !important;
   }
-}
-.main .videoFondo {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  object-fit: cover;
 }
 @media (max-width: 768px) {
   .main .videoFondo {
