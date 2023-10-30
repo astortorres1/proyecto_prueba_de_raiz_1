@@ -64,28 +64,13 @@
     background-color: map-get($mapa-colores, color-boxfondo);
     box-shadow: 15px 10px 10px 0px rgba(0, 0, 0, 0.81);
     border-radius: 12px;
-    border: solid 1px map-get($mapa-colores, color-negro);
-    transition: transform 0.8s, color 0.8s, background-color 0.8s;
-
+    border: solid 2px map-get($mapa-colores, color-negro);
+    transition: transform 0.4s, color 0.4s, background-color 0.4s, box-shadow 0.4s;
+    position: relative;
+    overflow: hidden;
     &:hover {
-      box-shadow: initial;
-      background-color: map-get($mapa-colores, color-gris);
-      transform: scale(1.1);
-      transition: transform 0.4s, color 0.4s, background-color 0.4s;
-    }
-  }
-  @media (max-width: 767px) {
-    .hijocaja1 {
-      width: 290px !important;
-      height: 350px !important;
-      overflow: visible !important; /* Añadimos overflow: visible */
-    }
-  
-    .hijocaja1 img {
-      object-fit: cover !important;
-      width: 100% !important;
-      height: 85% !important;
-      border-radius: 11px !important;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.81);
+      transform: translateY(-10px);
     }
   }
   .hijocaja1 img {
@@ -93,6 +78,18 @@
     width: 365px;
     height: 370px;
     border-radius: 11px;
+  }
+  @media (max-width: 767px) {
+    .hijocaja1 {
+      width: 290px !important;
+      height: 350px !important;
+    }
+    .hijocaja1 img {
+      object-fit: cover !important;
+      width: 100% !important;
+      height: 83% !important;
+      border-radius: 11px !important;
+    }
   }
   .videoFondo {
     position: fixed;
@@ -109,7 +106,6 @@
       height: auto;
     }
   }
-  
   .letrasProductos {
     font-family: $font-boxs;
     font-size: 1.5rem;

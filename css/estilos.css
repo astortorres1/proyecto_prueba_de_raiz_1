@@ -220,36 +220,35 @@
   width: 367px;
   height: 430px;
   margin-bottom: 15px;
-  background-color: rgba(255, 255, 255, 0.144);
+  background-color: rgba(255, 255, 255, 0.534);
   box-shadow: 15px 10px 10px 0px rgba(0, 0, 0, 0.81);
   border-radius: 12px;
-  border: solid 1px black;
-  transition: transform 0.8s, color 0.8s, background-color 0.8s;
+  border: solid 2px black;
+  transition: transform 0.4s, color 0.4s, background-color 0.4s, box-shadow 0.4s;
+  position: relative;
+  overflow: hidden;
 }
 .main .hijocaja1:hover {
-  box-shadow: initial;
-  background-color: grey;
-  transform: scale(1.1);
-  transition: transform 0.4s, color 0.4s, background-color 0.4s;
-}
-@media (max-width: 767px) {
-  .main .hijocaja1 {
-    width: 290px !important;
-    height: 350px !important;
-    overflow: visible !important; /* Añadimos overflow: visible */
-  }
-  .main .hijocaja1 img {
-    object-fit: cover !important;
-    width: 100% !important;
-    height: 85% !important;
-    border-radius: 11px !important;
-  }
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.81);
+  transform: translateY(-10px);
 }
 .main .hijocaja1 img {
   object-fit: cover;
   width: 365px;
   height: 370px;
   border-radius: 11px;
+}
+@media (max-width: 767px) {
+  .main .hijocaja1 {
+    width: 290px !important;
+    height: 350px !important;
+  }
+  .main .hijocaja1 img {
+    object-fit: cover !important;
+    width: 100% !important;
+    height: 83% !important;
+    border-radius: 11px !important;
+  }
 }
 .main .videoFondo {
   position: fixed;
